@@ -212,7 +212,7 @@ body{
     border-radius: 0.85em;
 }
 
-@media screen and (min-width:451px){
+@media screen and (min-width:555px){
     .main_section{
         flex-direction: row;
         /* padding-left: 10rem; */
