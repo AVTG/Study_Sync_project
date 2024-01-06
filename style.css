@@ -59,7 +59,7 @@ body{
     gap: 1.5rem;
 }
 
-@media screen and (min-width:750px){
+@media screen and (min-width:780px){
     .nav{
         display:flex ;
     }
@@ -92,7 +92,7 @@ body{
     background-color: #5254f8;
 }
 
-@media screen and (min-width:750px){
+@media screen and (min-width:780px){
     .contact_button{
         display: block;
     }
@@ -106,7 +106,7 @@ body{
     border: none;
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:780px){
     .menu_button{
         display: block;
     }
@@ -118,9 +118,11 @@ body{
     
 }
 
+
 .content{
     margin-top: 2%;
 }
+
 
 .main_section{
     max-width: 1280px;
@@ -210,7 +212,7 @@ body{
     border-radius: 0.85em;
 }
 
-@media screen and (min-width:751px){
+@media screen and (min-width:451px){
     .main_section{
         flex-direction: row;
         /* padding-left: 10rem; */
@@ -244,4 +246,55 @@ body{
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.company_container{
+    margin: 2rem auto;
+    /* margin-top: 40px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company_grid{
+    margin: 1.5rem;
+    background-color: var(--light-gray);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center center ;
+    gap: 2.2rem;
+    padding: 1.4rem 0.95rem;
+    border: none;
+    border-radius: 0.625rem;
+    animation: slideFromLeft 1s ease forwards;
+
+}
+
+.company_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.525rem;
+}
+
+.company_title{
+    font-size: 1.8rem;
+}
+
+.svg_img{
+    width: 25px;
+}
+
+.logo_text{
+    font-size: 0.995rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+@media screen and (min-width:751px) {
+    .company_grid{
+        grid-template-columns: repeat(4,1fr);
+        padding: 1.15rem;
+        border-radius: 0.45rem;
+    }
 }
