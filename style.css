@@ -472,7 +472,7 @@ body{
 
 
 .newsletter_container{
-    height: 35vh;
+    height: 300px;
     max-width: 1000px;
     margin: 0 auto;
     background-color: var(--light-gray);
@@ -510,11 +510,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 0.6rem;
 }
 
-@media screen and (min-width:640px){
+@media screen and (min-width:645px){
     .news_left{
         display: block;
         width: 50%;
@@ -528,6 +528,11 @@ body{
 
     .newsletter-container{
         padding: 2rem;
+        /* height: 500px; */
+    }
+
+    .news_right{
+        text-align: start;
     }
 }
 
@@ -591,4 +596,124 @@ body{
 
 .news_link{
     text-decoration: underline;
+}
+
+.footer_container{
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    background-color: var(--background-color);
+}
+
+.footer{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    padding: 1rem;
+    margin: 1.5rem 0.4rem;
+}
+
+.footer_top{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 33%;
+
+}
+
+.comp_logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo_link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.525rem;
+    color: var(--text-color);
+}
+
+.logo_svg{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.comp_logo{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.filler_text{
+    font-size: 0.885rem;
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 0.8rem;
+}
+
+.social_icon{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.social{
+    display: flex;
+    gap: 0.725rem;
+}
+
+.footer_grid{
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.footer_grid_heading{
+    text-align: justify;
+}
+
+.footer_link_list{
+    margin-top: 1.5rem;
+    list-style: none;
+    text-align: left;
+}
+
+.footer_link_list li{
+    margin: 0.725rem 0;
+}
+
+.footer-link{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+.footer_copyright{
+    font-size: 0.825rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.675rem;
+    border-top: 1px solid #777;
+    color: #777;
+}
+
+@media screen and (max-width:1080px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .footer_top{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:640px){
+    .footer_grid{
+        grid-template-columns: repeat(2,1fr);
+        align-content: center;
+    }
 }
