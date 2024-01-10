@@ -717,3 +717,10 @@ body{
         align-content: center;
     }
 }
+
+@media screen and (max-width:640px){
+    .footer_grid{
+        grid-template-columns: repeat(1,1fr);
+        align-content: center;
+    }
+}
